@@ -97,8 +97,9 @@ class Repr(Config):
     show_variables : bool
         Show the variables in the repr instead of generated names. This is
         an advanced option and may not work in all scenarios.
-    interactive : bool
-        Options controlling the interactive repr.
+    interactive : Interactive
+        Options controlling the interactive repr, such as the maximum number of
+        rows. To enable or disable the interactive repr, set `options.interactive`.
     """
 
     depth: Optional[PosInt] = None
